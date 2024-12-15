@@ -89,11 +89,17 @@ public:
 
 private:
     void init();
+//读取http请求报文缓冲区并解析
     HTTP_CODE process_read();
+//根据解析结果构建http响应报文
     bool process_write(HTTP_CODE ret);
+//解析请求行
     HTTP_CODE parse_request_line(char *text);
+//解析请求头
     HTTP_CODE parse_headers(char *text);
+//解析请求体
     HTTP_CODE parse_content(char *text);
+
     HTTP_CODE do_request();
     char *get_line() { return m_read_buf + m_start_line; };
     LINE_STATUS parse_line();

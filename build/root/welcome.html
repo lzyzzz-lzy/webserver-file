@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>做出选择 - 文件管理系统</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7fc;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 300px;
+        }
+
+        .form-container button {
+            padding: 10px 20px;
+            font-size: 18px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .form-container button:hover {
+            background-color: #0056b3;
+        }
+
+        .footer {
+            margin-top: 30px;
+            color: #999;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1><strong>做出你的选择</strong></h1>
+        
+        <div class="form-container">
+            <!-- 选择文件 -->
+            <form action="5" method="post">
+                <button type="submit">xxx.jpg</button>
+            </form>
+
+            <form action="6" method="post">
+                <button type="submit">xxx.avi</button>
+            </form>
+
+            <form action="7" method="post">
+                <button type="submit">关注我</button>
+            </form>
+        </div>
+        
+        <div class="footer">
+            <p>© 2024 文件管理系统</p>
+        </div>
+    </div>
+
+</body>
+</html>
