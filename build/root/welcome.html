@@ -55,6 +55,25 @@
             color: #999;
             font-size: 14px;
         }
+
+        .file-input {
+            display: none;
+        }
+
+        .file-label {
+            padding: 10px 20px;
+            font-size: 18px;
+            color: #fff;
+            background-color: #28a745;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .file-label:hover {
+            background-color: #218838;
+        }
     </style>
 </head>
 <body>
@@ -74,6 +93,17 @@
 
             <form action="7" method="post">
                 <button type="submit">关注我</button>
+            </form>
+
+            <!-- 上传文件 -->
+            <form action="8" method="post" enctype="multipart/form-data">
+                <input type="file" id="file-upload" class="file-input" name="file" />
+                <label for="file-upload" class="file-label">上传文件</label>
+            </form>
+
+            <!-- 下载文件 -->
+            <form action="9" method="post">
+                <button type="submit">下载文件</button>
             </form>
         </div>
         

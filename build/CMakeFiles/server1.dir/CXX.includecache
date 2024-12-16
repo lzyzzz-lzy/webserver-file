@@ -61,6 +61,8 @@ stdarg.h
 -
 errno.h
 -
+dirent.h
+-
 sys/wait.h
 -
 sys/uio.h
@@ -258,6 +260,8 @@ sys/mman.h
 stdarg.h
 -
 errno.h
+-
+dirent.h
 -
 sys/wait.h
 -
