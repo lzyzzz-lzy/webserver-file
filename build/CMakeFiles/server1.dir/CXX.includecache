@@ -77,6 +77,10 @@ map
 /root/tiny/TinyWebServer/./timer/lst_timer.h
 ../log/log.h
 /root/tiny/TinyWebServer/./log/log.h
+../snowflake/snowflake.h
+/root/tiny/TinyWebServer/./snowflake/snowflake.h
+../session/session.h
+/root/tiny/TinyWebServer/./session/session.h
 
 /root/tiny/TinyWebServer/./lock/locker.h
 exception
@@ -111,6 +115,36 @@ pthread.h
 -
 block_queue.h
 /root/tiny/TinyWebServer/./log/block_queue.h
+
+/root/tiny/TinyWebServer/./session/session.h
+iostream
+-
+string
+-
+unordered_map
+-
+ctime
+-
+sstream
+-
+random
+-
+iomanip
+-
+
+/root/tiny/TinyWebServer/./snowflake/snowflake.h
+iostream
+-
+chrono
+-
+atomic
+-
+string
+-
+sstream
+-
+iomanip
+-
 
 /root/tiny/TinyWebServer/./threadpool/threadpool.h
 list
@@ -277,6 +311,10 @@ map
 /root/tiny/TinyWebServer/timer/lst_timer.h
 ../log/log.h
 /root/tiny/TinyWebServer/log/log.h
+../snowflake/snowflake.h
+/root/tiny/TinyWebServer/snowflake/snowflake.h
+../session/session.h
+/root/tiny/TinyWebServer/session/session.h
 
 /root/tiny/TinyWebServer/lock/locker.h
 exception
@@ -329,6 +367,36 @@ block_queue.h
 /root/tiny/TinyWebServer/main.cpp
 config.h
 /root/tiny/TinyWebServer/config.h
+
+/root/tiny/TinyWebServer/session/session.h
+iostream
+-
+string
+-
+unordered_map
+-
+ctime
+-
+sstream
+-
+random
+-
+iomanip
+-
+
+/root/tiny/TinyWebServer/snowflake/snowflake.h
+iostream
+-
+chrono
+-
+atomic
+-
+string
+-
+sstream
+-
+iomanip
+-
 
 /root/tiny/TinyWebServer/timer/lst_timer.cpp
 lst_timer.h
@@ -409,4 +477,6 @@ sys/epoll.h
 /root/tiny/TinyWebServer/./threadpool/threadpool.h
 ./http/http_conn.h
 /root/tiny/TinyWebServer/./http/http_conn.h
+./session/session.h
+/root/tiny/TinyWebServer/./session/session.h
 

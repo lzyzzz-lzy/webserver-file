@@ -13,6 +13,8 @@ CMakeFiles/server1.dir/config.cpp.o
  /root/tiny/TinyWebServer/./lock/locker.h
  /root/tiny/TinyWebServer/./log/block_queue.h
  /root/tiny/TinyWebServer/./log/log.h
+ /root/tiny/TinyWebServer/./session/session.h
+ /root/tiny/TinyWebServer/./snowflake/snowflake.h
  /root/tiny/TinyWebServer/./threadpool/threadpool.h
  /root/tiny/TinyWebServer/./timer/lst_timer.h
  /root/tiny/TinyWebServer/config.cpp
@@ -25,6 +27,8 @@ CMakeFiles/server1.dir/http/http_conn.cpp.o
  /root/tiny/TinyWebServer/lock/locker.h
  /root/tiny/TinyWebServer/log/block_queue.h
  /root/tiny/TinyWebServer/log/log.h
+ /root/tiny/TinyWebServer/session/session.h
+ /root/tiny/TinyWebServer/snowflake/snowflake.h
  /root/tiny/TinyWebServer/timer/lst_timer.h
 CMakeFiles/server1.dir/log/log.cpp.o
  /root/tiny/TinyWebServer/lock/locker.h
@@ -37,6 +41,8 @@ CMakeFiles/server1.dir/main.cpp.o
  /root/tiny/TinyWebServer/./lock/locker.h
  /root/tiny/TinyWebServer/./log/block_queue.h
  /root/tiny/TinyWebServer/./log/log.h
+ /root/tiny/TinyWebServer/./session/session.h
+ /root/tiny/TinyWebServer/./snowflake/snowflake.h
  /root/tiny/TinyWebServer/./threadpool/threadpool.h
  /root/tiny/TinyWebServer/./timer/lst_timer.h
  /root/tiny/TinyWebServer/config.h
@@ -48,6 +54,8 @@ CMakeFiles/server1.dir/timer/lst_timer.cpp.o
  /root/tiny/TinyWebServer/lock/locker.h
  /root/tiny/TinyWebServer/log/block_queue.h
  /root/tiny/TinyWebServer/log/log.h
+ /root/tiny/TinyWebServer/session/session.h
+ /root/tiny/TinyWebServer/snowflake/snowflake.h
  /root/tiny/TinyWebServer/timer/lst_timer.cpp
  /root/tiny/TinyWebServer/timer/lst_timer.h
 CMakeFiles/server1.dir/webserver.cpp.o
@@ -56,6 +64,8 @@ CMakeFiles/server1.dir/webserver.cpp.o
  /root/tiny/TinyWebServer/./lock/locker.h
  /root/tiny/TinyWebServer/./log/block_queue.h
  /root/tiny/TinyWebServer/./log/log.h
+ /root/tiny/TinyWebServer/./session/session.h
+ /root/tiny/TinyWebServer/./snowflake/snowflake.h
  /root/tiny/TinyWebServer/./threadpool/threadpool.h
  /root/tiny/TinyWebServer/./timer/lst_timer.h
  /root/tiny/TinyWebServer/webserver.cpp

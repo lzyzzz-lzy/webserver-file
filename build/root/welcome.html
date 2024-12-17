@@ -96,9 +96,10 @@
             </form>
 
             <!-- 上传文件 -->
-            <form action="8" method="post" enctype="multipart/form-data">
+            <form id="upload-form" action="8" method="post" enctype="multipart/form-data">
                 <input type="file" id="file-upload" class="file-input" name="file" />
                 <label for="file-upload" class="file-label">上传文件</label>
+                <button type="submit" style="display: none;">上传</button> <!-- 隐藏默认提交按钮 -->
             </form>
 
             <!-- 下载文件 -->
@@ -111,6 +112,44 @@
             <p>© 2024 文件管理系统</p>
         </div>
     </div>
+
+    <!-- JavaScript 实现自动提交功能 -->
+    <script>
+        const fileInput = document.getElementById('file-upload');
+        const uploadForm = document.getElementById('upload-form');
+        const submitBtn = uploadForm.querySelector('button[type="submit"]');
+
+        // 监听文件选择事件，当文件选择后自动提交表单
+        fileInput.addEventListener('change', () => {
+            if (fileInput.files.length > 0) {
+                uploadForm.submit(); // 自动提交表单
+            }
+        });
+
+        // 提交表单并处理响应
+        uploadForm.addEventListener('submit', function(event) {
+            event.preventDefault();  // 阻止默认的表单提交行为
+
+            const formData = new FormData(uploadForm);  // 创建 FormData 对象，收集文件和其他表单数据
+
+            // 使用 Fetch API 异步提交表单
+            fetch(uploadForm.action, {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.text())  // 获取响应文本
+            .then(data => {
+                if (data.includes("文件上传成功")) {
+                    alert("文件上传成功！");  // 弹出成功提示框
+                } else {
+                    alert("上传失败，请重试。");  // 弹出失败提示框
+                }
+            })
+            .catch(error => {
+                alert("上传过程中出现错误，请重试。");  // 弹出错误提示框
+            });
+        });
+    </script>
 
 </body>
 </html>

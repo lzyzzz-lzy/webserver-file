@@ -23,6 +23,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   ".././http"
   ".././timer"
   ".././log"
+  ".././snowflake"
+  ".././session"
   )
 
 # Targets to which this target links.

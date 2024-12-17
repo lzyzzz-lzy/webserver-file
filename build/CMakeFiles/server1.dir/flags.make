@@ -6,5 +6,5 @@ CXX_FLAGS =   -Wall -std=c++11
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/usr/include/mysql -I/root/tiny/TinyWebServer/./lock -I/root/tiny/TinyWebServer/./CGImysql -I/root/tiny/TinyWebServer/./threadpool -I/root/tiny/TinyWebServer/./http -I/root/tiny/TinyWebServer/./timer -I/root/tiny/TinyWebServer/./log 
+CXX_INCLUDES = -I/usr/include/mysql -I/root/tiny/TinyWebServer/./lock -I/root/tiny/TinyWebServer/./CGImysql -I/root/tiny/TinyWebServer/./threadpool -I/root/tiny/TinyWebServer/./http -I/root/tiny/TinyWebServer/./timer -I/root/tiny/TinyWebServer/./log -I/root/tiny/TinyWebServer/./snowflake -I/root/tiny/TinyWebServer/./session 
 
